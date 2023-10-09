@@ -19,66 +19,7 @@
     <div class="min-h-screen bg-gray-100">
         <div class="px-2 md:px-20 pt-6 max-w-7xl mx-auto">
             <!-- nav -->
-            <div class="flex flex-wrap items-center justify-between">
-                <div class="flex items-center justify-center">
-                    <div class="flex items-center justify-center text-3xl font-bold text-true-gray-800">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-10 mr-2" viewBox="0 0 1024 1024"
-                            version="1.1">
-                            <path d="M1000.2 341.9L548.5 614.2 70.4 502.8l478.1-259.9z" fill="#9ED5E4" />
-                            <path
-                                d="M548.5 628.4c-1.1 0-2.2-0.1-3.2-0.4l-478-111.4c-5.8-1.3-10.1-6.1-10.9-12-0.8-5.9 2.1-11.6 7.3-14.5l478-259.9c3-1.6 6.5-2.1 9.9-1.4l451.7 99c5.7 1.3 10.1 5.9 11 11.6 1 5.8-1.7 11.5-6.7 14.5L555.8 626.4c-2.2 1.3-4.8 2-7.3 2z m-438.3-131L546 598.9l416.1-250.8L550.6 258 110.2 497.4z"
-                                fill="#154B8B" />
-                            <path
-                                d="M548.5 806L92.1 694.6c-43.4-5.4-71.7-71.2-69.5-120.7 1.3-29.8 17.8-71.2 69.5-71.2l456.3 111.4V806h0.1z"
-                                fill="#9ED5E4" />
-                            <path
-                                d="M548.5 820.3c-1.1 0-2.3-0.1-3.4-0.4L89.5 708.6c-24.4-3.4-46.3-21.6-61.9-51.2-13.3-25.3-20.5-56.7-19.3-84.1 0.5-12 3.7-35 18.8-54.8 10.5-13.7 30.2-30 65-30 1.1 0 2.3 0.1 3.4 0.4l456.3 111.4c6.4 1.6 10.9 7.3 10.9 13.9V806c0 4.4-2 8.5-5.5 11.2-2.5 2-5.6 3.1-8.7 3.1z m-458-303.2c-13.9 0.4-51.4 6.3-53.6 57.5-1 22.6 5 48.6 16 69.6 15.2 29 32.2 35.2 41 36.3 0.5 0.1 1.1 0.2 1.6 0.3l438.7 107.1V625.4L90.5 517.1z"
-                                fill="#154B8B" />
-                            <path d="M1000.2 533.7L548.5 806V614.2l451.7-272.3z" fill="#9ED5E4" />
-                            <path
-                                d="M548.5 820.3c-2.4 0-4.8-0.6-7-1.8-4.5-2.5-7.3-7.3-7.3-12.4V614.2c0-5 2.6-9.6 6.9-12.2l451.7-272.3c4.4-2.7 9.9-2.7 14.4-0.2s7.3 7.3 7.3 12.4v191.8c0 5-2.6 9.6-6.9 12.2L555.8 818.2c-2.2 1.4-4.8 2.1-7.3 2.1z m14.2-198.1v158.5l423.2-255.1V367.2l-423.2 255z"
-                                fill="#154B8B" />
-                            <path d="M825.4 343.8L759.6 379l-243.7-49.8 70.7-35.3z" fill="#F7F8F9" />
-                            <path
-                                d="M759.6 387c-0.5 0-1.1-0.1-1.6-0.2L514.3 337c-3.3-0.7-5.9-3.4-6.3-6.8s1.3-6.7 4.4-8.2l70.7-35.3c1.6-0.8 3.4-1 5.2-0.7L827 336c3.3 0.7 5.8 3.4 6.3 6.7 0.5 3.3-1.2 6.6-4.1 8.2l-65.8 35.2c-1.2 0.6-2.5 0.9-3.8 0.9z m-219.4-61l218.2 44.6 43.8-23.5-214.5-44.8-47.5 23.7z"
-                                fill="#154B8B" />
-                        </svg>
-                        {{ config('app.name') }}
-                    </div>
-                    <div class="flex flex-wrap items-center justify-center antialiased lg:ml-20 pt-1">
-                        <a href="{{ route('/') }}"
-                            class="flex items-center justify-center mr-10 text-base text-gray-700 text-opacity-90 font-medium tracking-tight hover:text-cool-gray-600 transition duration-150 ease-in-out">
-                            Inicio
-                        </a>
-                        <a href="{{ route('books') }}"
-                            class="flex items-center justify-center mr-10 text-base text-gray-700 text-opacity-90 font-medium tracking-tight hover:text-cool-gray-600 transition duration-150 ease-in-out">
-                            Libros
-                        </a>
-                    </div>
-                </div>
-
-                @if (Route::has('login'))
-                    <div class="flex items-center justify-center">
-                        @auth
-                            <a href="{{ route('dashboard') }}"
-                                class="px-6 py-3 rounded-3xl font-medium bg-gradient-to-b from-gray-900 to-black text-white outline-none focus:outline-none hover:shadow-md hover:from-true-gray-900 transition duration-200 ease-in-out">
-                                Dashboard
-                            </a>
-                        @else
-                            <a href="{{ route('login') }}"
-                                class="mr-5 text-lg font-medium text-true-gray-800 hover:text-cool-gray-700 transition duration-150 ease-in-out">Login</a>
-
-                            @if (Route::has('register'))
-                                <a href="{{ route('register') }}"
-                                    class="px-6 py-3 rounded-3xl font-medium bg-gradient-to-b from-gray-900 to-black text-white outline-none focus:outline-none hover:shadow-md hover:from-true-gray-900 transition duration-200 ease-in-out">
-                                    Regístrese
-                                </a>
-                            @endif
-                        @endauth
-
-                    </div>
-                @endif
-            </div>
+            @include('layouts.partials.nav')
             <!-- /nav -->
 
             <!-- hero section -->
@@ -126,12 +67,12 @@
 
                     <!-- Featured Item -->
                     @foreach ($books as $book)
-                        <x-book-card :book="$book" :show-description="true" />
+                        <x-book-card :$book :show-description="true" />
                     @endforeach
                     <!-- /Featured Item -->
                 </div>
                 <!-- /Featured Grid -->
-                {{ $featuredBooks->links() }}
+                <div class="py-4">{{ $featuredBooks->links() }}</div>
             </div>
 
             <!-- /Featured section -->
@@ -195,7 +136,7 @@
             <!-- Reviews section -->
 
             <!-- Books section -->
-            <div class="my-20" id="books">
+            <div class="my-15" id="books">
                 <h2 class="text-xl md:text-3xl font-semibold text-gray-900 leading-none">
                     Libros
                 </h2>
@@ -205,87 +146,7 @@
 
                     <!-- Books Item -->
                     @foreach ($books as $book)
-                        <a href="#"
-                            class="focus:outline-none xl:mb-0 mb-8 rounded-xl overflow-hidden shadow-xs bg-white">
-                            <div>
-                                <img alt="{{ $book->name }}" src="{{ asset($book->image_path) }}" tabindex="0"
-                                    class="focus:outline-none w-full h-44 object-contain py-4" />
-                            </div>
-                            <div>
-                                <div class="p-4">
-                                    <div>
-                                        <h2 tabindex="0" class="focus:outline-none text-lg font-semibold">
-                                            {{ $book->name }}</h2>
-                                        <p class="text-sm text-gray-500">por: @foreach ($book->authors as $author)
-                                                <span>{{ $author->name }}
-                                                    @if (!$loop->last)
-                                                        ,
-                                                    @endif
-                                                </span>
-                                            @endforeach
-                                        </p>
-                                    </div>
-                                    <div class="flex mt-4 gap-1">
-                                        @foreach ($book->genres as $genre)
-                                            <div>
-                                                <p tabindex="0"
-                                                    class="focus:outline-none text-xs text-gray-600 px-2 bg-gray-200 py-1">
-                                                    <span>
-                                                        {{ $genre->name }}
-                                                    </span>
-                                                </p>
-                                            </div>
-                                        @endforeach
-
-                                    </div>
-                                    <div class="flex items-center mt-4 gap-2">
-                                        <div class="flex items-center">
-                                            <svg class="w-5 h-5 text-yellow-500" xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 20 20" fill="currentColor">
-                                                <path
-                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                            </svg>
-                                            <span
-                                                class="text-gray-500 text-xs">{{ number_format($book->reviews_avg_stars, 1) }}
-                                                estrellas</span>
-                                        </div>
-                                        <div class="flex items-center">
-                                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" version="1.1"
-                                                id="Layer_1" viewBox="0 0 460 460" xml:space="preserve">
-                                                <g>
-                                                    <path style="fill:#FF7F4F;"
-                                                        d="M230.333,0C103.308,0,0,102.974,0,230c0,98.785,62.479,183.024,150.004,215.598l297.381-291.024   C416.25,64.595,330.94,0,230.333,0z" />
-                                                    <path style="fill:#FF5419;"
-                                                        d="M460,230c0-26.416-4.467-51.784-12.663-75.41l-44.274-44.274l-345.46,201.7l50.785,50.785   l-10.785,30.515l52.366,52.367C174.895,454.935,202.187,460,230.332,460C357.358,460,460,357.026,460,230z" />
-                                                    <polygon style="fill:#71E2F0;"
-                                                        points="403.063,110.317 403.063,312.017 230.332,312.017 200.003,211.167 230.332,110.317  " />
-                                                    <polygon style="fill:#C2FBFF;"
-                                                        points="230.332,110.317 230.332,312.017 178.893,312.017 97.603,393.317 97.603,312.017    57.603,312.017 57.603,110.317  " />
-                                                    <polygon style="fill:#C2FBFF;"
-                                                        points="383.063,130.317 383.063,292.017 230.332,292.017 210.333,211.167 230.332,130.317  " />
-                                                    <rect x="77.603" y="130.317" style="fill:#FFFFFF;"
-                                                        width="152.729" height="161.7" />
-                                                    <polygon style="fill:#E0A300;"
-                                                        points="362.823,202.002 343.073,222.122 347.223,250.002 321.993,237.432 311.993,214.882    321.993,172.332 335.023,197.332  " />
-                                                    <polygon style="fill:#FFC61B;"
-                                                        points="321.993,172.332 321.993,237.432 296.753,250.002 300.913,222.122 281.163,202.002    308.963,197.332  " />
-                                                    <polygon style="fill:#E0A300;"
-                                                        points="271.162,202.002 251.412,222.122 255.562,250.002 230.332,237.432 220.332,214.882    230.332,172.332 243.362,197.332  " />
-                                                    <polygon style="fill:#FFC61B;"
-                                                        points="230.332,172.332 230.332,237.432 205.092,250.002 209.252,222.122 189.502,202.002    217.302,197.332  " />
-                                                    <polygon style="fill:#E0A300;"
-                                                        points="179.503,202.002 159.753,222.122 163.903,250.002 138.673,237.432 128.673,214.882    138.673,172.332 151.703,197.332  " />
-                                                    <polygon style="fill:#FFC61B;"
-                                                        points="138.673,172.332 138.673,237.432 113.433,250.002 117.593,222.122 97.843,202.002    125.643,197.332  " />
-                                                </g>
-                                            </svg>
-                                            <span class="text-gray-500 text-xs ml-1">{{ $book->reviews_count }}
-                                                reseñas</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                    <x-book-card :$book :show-description="true" />
                     @endforeach
                     <!-- /Books Item -->
                 </div>

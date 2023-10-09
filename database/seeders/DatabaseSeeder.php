@@ -53,15 +53,40 @@ class DatabaseSeeder extends Seeder
         ]);
 
         // libros
-        for ($i = 1; $i < 6; $i++) {
-            Book::create([
-                'name' => 'Libro 0' . $i,
-                'description' => 'Descripción del Libro 0' . $i,
-                'image_path' => 'storage/assets/img/books/default.png',
-                'published_at' => Carbon::now(),
-                'pages' => '1' . $i,
-            ]);
-        }
+        Book::create([
+            'name' => 'PHP 01',
+            'description' => 'Descripción del Libro PHP 01',
+            'image_path' => 'storage/assets/img/books/default.png',
+            'published_at' => Carbon::now(),
+            'pages' => '100',
+        ]);
+        Book::create([
+            'name' => 'MySQL 02',
+            'description' => 'Descripción del Libro MySQL 02',
+            'image_path' => 'storage/assets/img/books/default.png',
+            'published_at' => Carbon::now(),
+            'pages' => '200',
+        ]);
+        Book::create([
+            'name' => 'HTML 03',
+            'description' => 'Descripción del Libro HTML 03',
+            'image_path' => 'storage/assets/img/books/default.png',
+            'published_at' => Carbon::now(),
+            'pages' => '50',
+        ]);
+        Book::create([
+            'name' => 'Visual Studio Code 04',
+            'description' => 'Descripción del Libro Visual Studio Code 04',
+            'image_path' => 'storage/assets/img/books/default.png',
+            'published_at' => Carbon::now(),
+            'pages' => '400',
+        ]);Book::create([
+            'name' => 'Laravel 05',
+            'description' => 'Descripción del Libro Laravel 05',
+            'image_path' => 'storage/assets/img/books/default.png',
+            'published_at' => Carbon::now(),
+            'pages' => '500',
+        ]);
 
         // autores
         for ($i = 1; $i < 4; $i++) {

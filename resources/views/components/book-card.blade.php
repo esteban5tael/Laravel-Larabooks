@@ -1,3 +1,4 @@
+@props(['book','showDescription'=>false])
 <!-- Books Item -->
 <a href="#" class="focus:outline-none xl:mb-0 mb-8 rounded-xl overflow-hidden shadow-xs bg-white">
     <div>
@@ -7,7 +8,7 @@
     <div>
         <div class="p-4">
             <div>
-                <h2 tabindex="0" class="focus:outline-none text-lg font-semibold">{{ $book->title }}</h2>
+                <h2 tabindex="0" class="focus:outline-none text-lg font-semibold">{{ $book->name }}</h2>
                 <p class="text-sm text-gray-500">por
                     @foreach ($book->authors as $author)
                         <span>{{ $author->name }}
