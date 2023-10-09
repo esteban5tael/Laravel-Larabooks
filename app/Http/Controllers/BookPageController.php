@@ -14,7 +14,15 @@ class BookPageController extends Controller
     public function __invoke(Book $book)
     {
         //
-        // dd($book);
-        return view('books.show', compact('book'));
+        $book->loadAvg('reviews', 'stars')
+            ->loadCount('reviews');
+
+        $reviews = $book
+            ->reviews()
+            ->where('is_approved', '=', 1)
+            ->paginate(5);
+        //   dd($reviews);
+
+        return view('books.show', compact('book', 'reviews'));
     }
 }

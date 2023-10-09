@@ -1,6 +1,6 @@
 @props(['book','showDescription'=>false])
 <!-- Books Item -->
-<a href="#" class="focus:outline-none xl:mb-0 mb-8 rounded-xl overflow-hidden shadow-xs bg-white">
+<a href="{{route('book-show',$book)}}" class="focus:outline-none xl:mb-0 mb-8 rounded-xl overflow-hidden shadow-xs bg-white">
     <div>
         <img alt="{{ $book->name }}" src="{{ asset($book->image_path) }}"  tabindex="0"
             class="focus:outline-none w-full h-44 object-contain py-4" />

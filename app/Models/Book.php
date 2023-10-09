@@ -17,6 +17,12 @@ class Book extends Model
         'pages',
     ];
 
+    protected $casts = [
+        
+        'published_at'=>'datetime',
+    ];
+
+
     public function reviews()
     {
         return $this->hasMany(Review::class);

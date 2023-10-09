@@ -90,7 +90,7 @@
                     @foreach ($reviews as $review)
                         <div class="bg-white p-4 rounded-xl flex gap-6 items-center shadow-xs">
                             <div class="w-1/4 flex flex-col items-center">
-                                <img src="{{ $review->book->image_path }}" alt="image book clean code" class="w-4/5">
+                                <img src="{{ asset($review->book->image_path) }}" alt="{{ $review->book->name }}" class="w-4/5">
                                 <p class="text-gray-600 text-sm text-center mt-2">{{ $review->book->name }}</p>
                             </div>
                             <div class="flex flex-col gap-2 w-3/4">

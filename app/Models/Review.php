@@ -18,6 +18,11 @@ class Review extends Model
         'is_approved',
     ];
 
+    protected $casts = [
+        
+        'created_at'=>'datetime',
+    ];
+
     public function book()
     {
         return $this->belongsTo(Book::class);

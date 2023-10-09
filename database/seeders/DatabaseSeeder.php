@@ -80,9 +80,18 @@ class DatabaseSeeder extends Seeder
             'image_path' => 'storage/assets/img/books/default.png',
             'published_at' => Carbon::now(),
             'pages' => '400',
-        ]);Book::create([
+        ]);
+        Book::create([
             'name' => 'Laravel 05',
             'description' => 'Descripción del Libro Laravel 05',
+            'image_path' => 'storage/assets/img/books/default.png',
+            'published_at' => Carbon::now(),
+            'pages' => '500',
+        ]);
+
+        Book::create([
+            'name' => 'Python 06',
+            'description' => 'Descripción del Libro Python 06',
             'image_path' => 'storage/assets/img/books/default.png',
             'published_at' => Carbon::now(),
             'pages' => '500',
