@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BookPageController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\WelcomePageController;
 use Illuminate\Support\Facades\Route;
@@ -16,6 +17,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', WelcomePageController::class)->name('/');
+
+Route::get('/books', BookPageController::class)->name('books');
 
 
 Route::get('/t', function () {
