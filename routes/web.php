@@ -15,11 +15,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 })->name('/');
 
 
-
+Route::get('/t', function () {
+    $ts = App\Models\User::all();
+    return view('_t', compact('ts'));
+});
 
 
 
@@ -40,7 +43,7 @@ Route::middleware('auth')->group(function () {
             return ('admin');
         });
     });
-    
+
     Route::middleware(['is.reader'])->group(function () {
         Route::get('/reader', function () {
             return ('reader');

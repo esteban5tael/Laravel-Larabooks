@@ -4,6 +4,10 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
+use App\Models\Author;
+use App\Models\Book;
+use App\Models\Genre;
+use App\Models\Review;
 use App\Models\User;
 use Carbon\Carbon;
 use Illuminate\Database\Seeder;
@@ -29,7 +33,7 @@ class DatabaseSeeder extends Seeder
             'email' => 'administrador@administrador.com',
             'email_verified_at' => Carbon::now(),
             'password' => Hash::make('12345678'),
-            'is_admin'=>1,
+            'is_admin' => 1,
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
 
@@ -40,10 +44,86 @@ class DatabaseSeeder extends Seeder
             'email' => 'usuario@usuario.com',
             'email_verified_at' => Carbon::now(),
             'password' => Hash::make('12345678'),
-            'is_admin'=>0,
+            'is_admin' => 0,
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
 
+        ]);
+
+        // libros
+        for ($i = 1; $i < 6; $i++) {
+            Book::create([
+                'name' => 'Libro 0' . $i,
+                'description' => 'Descripción del Libro 0' . $i,
+                'image_path' => 'storage/assets/img/books/default.png',
+                'published_at' => Carbon::now(),
+                'pages' => '1' . $i,
+            ]);
+        }
+
+        // autores
+        for ($i = 1; $i < 4; $i++) {
+            Author::create([
+                'name' => 'Autor 0' . $i,
+                'description' => 'Descripción del Autor 0' . $i,
+
+            ]);
+        }
+
+
+        // generos
+        for ($i = 1; $i < 6; $i++) {
+            Genre::create([
+                'name' => 'Género 0' . $i,
+                'description' => 'Descripción del Género 0' . $i,
+
+            ]);
+        }
+
+        // reseñas
+        Review::create([
+            'user_id'=>1,
+            'book_id'=>1,
+            'title'=>'Reseña Libro 1',
+            'description'=>'Descripción Reseña Libro 1',
+            'stars'=>'1',
+            'is_approved'=>0,
+        ]);
+
+        Review::create([
+            'user_id'=>2,
+            'book_id'=>2,
+            'title'=>'Reseña Libro 2',
+            'description'=>'Descripción Reseña Libro 2',
+            'stars'=>'2',
+            'is_approved'=>1,
+        ]);
+
+        Review::create([
+            'user_id'=>1,
+            'book_id'=>3,
+            'title'=>'Reseña Libro 3',
+            'description'=>'Descripción Reseña Libro 3',
+            'stars'=>'3',
+            'is_approved'=>0,
+        ]);
+
+        Review::create([
+            'user_id'=>2,
+            'book_id'=>4,
+            'title'=>'Reseña Libro 4',
+            'description'=>'Descripción Reseña Libro 4',
+            'stars'=>'4',
+            'is_approved'=>1,
+        ]);
+
+        Review::create([
+            'user_id'=>1,
+            'book_id'=>5,
+            'title'=>'Reseña Libro 5',
+            'description'=>'Descripción Reseña Libro 5',
+            'stars'=>'5',
+            'is_approved'=>0,
         ]);
     }
 }
