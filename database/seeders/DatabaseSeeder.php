@@ -5,7 +5,9 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 use App\Models\Author;
+use App\Models\AuthorBook;
 use App\Models\Book;
+use App\Models\BookGenre;
 use App\Models\Genre;
 use App\Models\Review;
 use App\Models\User;
@@ -82,48 +84,176 @@ class DatabaseSeeder extends Seeder
 
         // reseñas
         Review::create([
-            'user_id'=>1,
-            'book_id'=>1,
-            'title'=>'Reseña Libro 1',
-            'description'=>'Descripción Reseña Libro 1',
-            'stars'=>'1',
-            'is_approved'=>0,
+            'user_id' => 1,
+            'book_id' => 1,
+            'title' => 'Reseña Libro 1',
+            'description' => 'Descripción Reseña Libro 1',
+            'stars' => '1',
+            'is_approved' => 1,
+        ]);
+        Review::create([
+            'user_id' => 2,
+            'book_id' => 1,
+            'title' => 'Reseña Libro 1',
+            'description' => 'Descripción Reseña Libro 1',
+            'stars' => '3',
+            'is_approved' => 1,
+        ]);
+        // 
+        Review::create([
+            'user_id' => 1,
+            'book_id' => 2,
+            'title' => 'Reseña Libro 2',
+            'description' => 'Descripción Reseña Libro 2',
+            'stars' => '3',
+            'is_approved' => 1,
+        ]);
+        Review::create([
+            'user_id' => 2,
+            'book_id' => 2,
+            'title' => 'Reseña Libro 2',
+            'description' => 'Descripción Reseña Libro 2',
+            'stars' => '5',
+            'is_approved' => 1,
+        ]);
+        // 
+        Review::create([
+            'user_id' => 1,
+            'book_id' => 3,
+            'title' => 'Reseña Libro 3',
+            'description' => 'Descripción Reseña Libro 3',
+            'stars' => '2',
+            'is_approved' => 1,
+        ]);
+        Review::create([
+            'user_id' => 2,
+            'book_id' => 3,
+            'title' => 'Reseña Libro 3',
+            'description' => 'Descripción Reseña Libro 3',
+            'stars' => '4',
+            'is_approved' => 1,
+        ]);
+        // 
+        Review::create([
+            'user_id' => 1,
+            'book_id' => 4,
+            'title' => 'Reseña Libro 4',
+            'description' => 'Descripción Reseña Libro 4',
+            'stars' => '4',
+            'is_approved' => 1,
+        ]);
+        Review::create([
+            'user_id' => 2,
+            'book_id' => 4,
+            'title' => 'Reseña Libro 4',
+            'description' => 'Descripción Reseña Libro 4',
+            'stars' => '1',
+            'is_approved' => 1,
+        ]);
+        // 
+        Review::create([
+            'user_id' => 1,
+            'book_id' => 5,
+            'title' => 'Reseña Libro 5',
+            'description' => 'Descripción Reseña Libro 5',
+            'stars' => '4',
+            'is_approved' => 1,
+        ]);
+        Review::create([
+            'user_id' => 2,
+            'book_id' => 5,
+            'title' => 'Reseña Libro 5',
+            'description' => 'Descripción Reseña Libro 5',
+            'stars' => '5',
+            'is_approved' => 1,
+        ]);
+        // 
+
+
+        // autores libros
+
+        AuthorBook::create([
+            'author_id' => 3,
+            'book_id' => 5,
+        ]);
+        AuthorBook::create([
+            'author_id' => 1,
+            'book_id' => 5,
+        ]);
+        AuthorBook::create([
+            'author_id' => 1,
+            'book_id' => 4,
+        ]);
+        AuthorBook::create([
+            'author_id' => 2,
+            'book_id' => 4,
+        ]);
+        AuthorBook::create([
+            'author_id' => 2,
+            'book_id' => 3,
+        ]);
+        AuthorBook::create([
+            'author_id' => 3,
+            'book_id' => 3,
+        ]);
+        AuthorBook::create([
+            'author_id' => 3,
+            'book_id' => 2,
+        ]);
+        AuthorBook::create([
+            'author_id' => 2,
+            'book_id' => 2,
+        ]);
+        AuthorBook::create([
+            'author_id' => 2,
+            'book_id' => 1,
+        ]);
+        AuthorBook::create([
+            'author_id' => 1,
+            'book_id' => 1,
         ]);
 
-        Review::create([
-            'user_id'=>2,
-            'book_id'=>2,
-            'title'=>'Reseña Libro 2',
-            'description'=>'Descripción Reseña Libro 2',
-            'stars'=>'2',
-            'is_approved'=>1,
-        ]);
+        // libros generos
 
-        Review::create([
-            'user_id'=>1,
-            'book_id'=>3,
-            'title'=>'Reseña Libro 3',
-            'description'=>'Descripción Reseña Libro 3',
-            'stars'=>'3',
-            'is_approved'=>0,
+        BookGenre::create([
+            'book_id' => 1,
+            'genre_id' => 1,
         ]);
-
-        Review::create([
-            'user_id'=>2,
-            'book_id'=>4,
-            'title'=>'Reseña Libro 4',
-            'description'=>'Descripción Reseña Libro 4',
-            'stars'=>'4',
-            'is_approved'=>1,
+        BookGenre::create([
+            'book_id' => 1,
+            'genre_id' => 2,
         ]);
-
-        Review::create([
-            'user_id'=>1,
-            'book_id'=>5,
-            'title'=>'Reseña Libro 5',
-            'description'=>'Descripción Reseña Libro 5',
-            'stars'=>'5',
-            'is_approved'=>0,
+        BookGenre::create([
+            'book_id' => 2,
+            'genre_id' => 2,
+        ]);
+        BookGenre::create([
+            'book_id' => 2,
+            'genre_id' => 3,
+        ]);
+        BookGenre::create([
+            'book_id' => 3,
+            'genre_id' => 3,
+        ]);
+        BookGenre::create([
+            'book_id' => 3,
+            'genre_id' => 4,
+        ]);
+        BookGenre::create([
+            'book_id' => 4,
+            'genre_id' => 4,
+        ]);
+        BookGenre::create([
+            'book_id' => 4,
+            'genre_id' => 5,
+        ]);
+        BookGenre::create([
+            'book_id' => 5,
+            'genre_id' => 5,
+        ]);
+        BookGenre::create([
+            'book_id' => 5,
+            'genre_id' => 1,
         ]);
     }
 }

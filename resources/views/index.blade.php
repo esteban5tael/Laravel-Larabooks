@@ -120,339 +120,96 @@
 
                 <!-- Featured Grid -->
                 <div class="mt-6 grid grid-cols-1 md:grid-cols-4 gap-4">
-                    <!-- Featured Item -->
-                    <a href="#"
-                        class="focus:outline-none xl:mb-0 mb-8 rounded-xl overflow-hidden shadow-xs bg-white">
-                        <div>
-                            <img alt="person capturing an image"
-                                src="https://m.media-amazon.com/images/I/41SH-SvWPxL._SX342_SY445_QL70_ML2_.jpg"
-                                tabindex="0" class="focus:outline-none w-full h-44 object-contain py-4" />
-                        </div>
-                        <div>
-                            <div class="p-4">
-                                <div>
-                                    <h2 tabindex="0" class="focus:outline-none text-lg font-semibold">Clean Code</h2>
-                                    <p class="text-sm text-gray-500">por Robert C. Martin</p>
-                                </div>
-                                <div class="text-sm text-gray-600 py-2">
-                                    Un clásico en la comunidad de desarrollo de software, "Clean Code" de Robert C.
-                                    Martin
-                                    enseña principios y prácticas para escribir código limpio, legible y mantenible.
-                                </div>
-                                <div class="flex mt-4">
-                                    <div>
-                                        <p tabindex="0"
-                                            class="focus:outline-none text-xs text-gray-600 px-2 bg-gray-200 py-1">
-                                            Programación</p>
-                                    </div>
-                                    <div class="pl-2">
-                                        <p tabindex="0"
-                                            class="focus:outline-none text-xs text-gray-600 px-2 bg-gray-200 py-1">
-                                            Buenas
-                                            prácticas</p>
-                                    </div>
-                                </div>
-                                <div class="flex items-center mt-4 gap-2">
-                                    <div class="flex items-center">
-                                        <svg class="w-5 h-5 text-yellow-500" xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 20 20" fill="currentColor">
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                        </svg>
-                                        <span class="text-gray-500 text-xs">4,5 estrellas</span>
-                                    </div>
-                                    <div class="flex items-center">
-                                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" version="1.1"
-                                            id="Layer_1" viewBox="0 0 460 460" xml:space="preserve">
-                                            <g>
-                                                <path style="fill:#FF7F4F;"
-                                                    d="M230.333,0C103.308,0,0,102.974,0,230c0,98.785,62.479,183.024,150.004,215.598l297.381-291.024   C416.25,64.595,330.94,0,230.333,0z" />
-                                                <path style="fill:#FF5419;"
-                                                    d="M460,230c0-26.416-4.467-51.784-12.663-75.41l-44.274-44.274l-345.46,201.7l50.785,50.785   l-10.785,30.515l52.366,52.367C174.895,454.935,202.187,460,230.332,460C357.358,460,460,357.026,460,230z" />
-                                                <polygon style="fill:#71E2F0;"
-                                                    points="403.063,110.317 403.063,312.017 230.332,312.017 200.003,211.167 230.332,110.317  " />
-                                                <polygon style="fill:#C2FBFF;"
-                                                    points="230.332,110.317 230.332,312.017 178.893,312.017 97.603,393.317 97.603,312.017    57.603,312.017 57.603,110.317  " />
-                                                <polygon style="fill:#C2FBFF;"
-                                                    points="383.063,130.317 383.063,292.017 230.332,292.017 210.333,211.167 230.332,130.317  " />
-                                                <rect x="77.603" y="130.317" style="fill:#FFFFFF;"
-                                                    width="152.729" height="161.7" />
-                                                <polygon style="fill:#E0A300;"
-                                                    points="362.823,202.002 343.073,222.122 347.223,250.002 321.993,237.432 311.993,214.882    321.993,172.332 335.023,197.332  " />
-                                                <polygon style="fill:#FFC61B;"
-                                                    points="321.993,172.332 321.993,237.432 296.753,250.002 300.913,222.122 281.163,202.002    308.963,197.332  " />
-                                                <polygon style="fill:#E0A300;"
-                                                    points="271.162,202.002 251.412,222.122 255.562,250.002 230.332,237.432 220.332,214.882    230.332,172.332 243.362,197.332  " />
-                                                <polygon style="fill:#FFC61B;"
-                                                    points="230.332,172.332 230.332,237.432 205.092,250.002 209.252,222.122 189.502,202.002    217.302,197.332  " />
-                                                <polygon style="fill:#E0A300;"
-                                                    points="179.503,202.002 159.753,222.122 163.903,250.002 138.673,237.432 128.673,214.882    138.673,172.332 151.703,197.332  " />
-                                                <polygon style="fill:#FFC61B;"
-                                                    points="138.673,172.332 138.673,237.432 113.433,250.002 117.593,222.122 97.843,202.002    125.643,197.332  " />
-                                            </g>
-                                        </svg>
-                                        <span class="text-gray-500 text-xs ml-1">400 reseñas</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <!-- /Featured Item -->
 
                     <!-- Featured Item -->
-                    <a href="#"
-                        class="focus:outline-none xl:mb-0 mb-8 rounded-xl overflow-hidden shadow-xs bg-white">
-                        <div>
-                            <img alt="person capturing an image"
-                                src="https://images.cdn2.buscalibre.com/fit-in/360x360/03/1a/031af9d7e401bb2d08911c317ecbedad.jpg"
-                                tabindex="0" class="focus:outline-none w-full h-44 object-contain py-4" />
-                        </div>
-                        <div>
-                            <div class="p-4">
-                                <div>
-                                    <h2 tabindex="0" class="focus:outline-none text-lg font-semibold">The Pragmatic
-                                        Programmer</h2>
-                                    <p class="text-sm text-gray-500">por Andrew Hunt y David Thomas</p>
-                                </div>
-                                <div class="text-sm text-gray-600 py-2">
-                                    El libro presenta consejos y técnicas para escribir un mejor código, trabajar de
-                                    manera
-                                    más eficiente y aprovechar al máximo las herramientas y tecnologías disponibles.
-                                </div>
-                                <div class="flex mt-4">
+                    @foreach ($books as $book)
+                        <a href="#"
+                            class="focus:outline-none xl:mb-0 mb-8 rounded-xl overflow-hidden shadow-xs bg-white">
+                            <div>
+                                <img alt="{{ $book->name }}" src="{{ asset($book->image_path) }}" tabindex="0"
+                                    class="focus:outline-none w-full h-44 object-contain py-4" />
+                            </div>
+                            <div>
+                                <div class="p-4">
                                     <div>
-                                        <p tabindex="0"
-                                            class="focus:outline-none text-xs text-gray-600 px-2 bg-gray-200 py-1">
-                                            Programación</p>
-                                    </div>
-                                    <div class="pl-2">
-                                        <p tabindex="0"
-                                            class="focus:outline-none text-xs text-gray-600 px-2 bg-gray-200 py-1">
-                                            Productividad
+                                        <h2 tabindex="0" class="focus:outline-none text-lg font-semibold">
+                                            {{ $book->name }}</h2>
+                                        <p class="text-sm text-gray-500">por:
+                                            @foreach ($book->authors as $author)
+                                                <span>{{ $author->name }}
+                                                    @if (!$loop->last)
+                                                        ,
+                                                    @endif
+                                                </span>
+                                            @endforeach
                                         </p>
                                     </div>
-                                </div>
-                                <div class="flex items-center mt-4 gap-2">
-                                    <div class="flex items-center">
-                                        <svg class="w-5 h-5 text-yellow-500" xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 20 20" fill="currentColor">
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                        </svg>
-                                        <span class="text-gray-500 text-xs">4,3 estrellas</span>
+                                    <div class="text-sm text-gray-600 py-2">
+                                        {{ $book->description }}
                                     </div>
-                                    <div class="flex items-center">
-                                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" version="1.1"
-                                            id="Layer_1" viewBox="0 0 460 460" xml:space="preserve">
-                                            <g>
-                                                <path style="fill:#FF7F4F;"
-                                                    d="M230.333,0C103.308,0,0,102.974,0,230c0,98.785,62.479,183.024,150.004,215.598l297.381-291.024   C416.25,64.595,330.94,0,230.333,0z" />
-                                                <path style="fill:#FF5419;"
-                                                    d="M460,230c0-26.416-4.467-51.784-12.663-75.41l-44.274-44.274l-345.46,201.7l50.785,50.785   l-10.785,30.515l52.366,52.367C174.895,454.935,202.187,460,230.332,460C357.358,460,460,357.026,460,230z" />
-                                                <polygon style="fill:#71E2F0;"
-                                                    points="403.063,110.317 403.063,312.017 230.332,312.017 200.003,211.167 230.332,110.317  " />
-                                                <polygon style="fill:#C2FBFF;"
-                                                    points="230.332,110.317 230.332,312.017 178.893,312.017 97.603,393.317 97.603,312.017    57.603,312.017 57.603,110.317  " />
-                                                <polygon style="fill:#C2FBFF;"
-                                                    points="383.063,130.317 383.063,292.017 230.332,292.017 210.333,211.167 230.332,130.317  " />
-                                                <rect x="77.603" y="130.317" style="fill:#FFFFFF;"
-                                                    width="152.729" height="161.7" />
-                                                <polygon style="fill:#E0A300;"
-                                                    points="362.823,202.002 343.073,222.122 347.223,250.002 321.993,237.432 311.993,214.882    321.993,172.332 335.023,197.332  " />
-                                                <polygon style="fill:#FFC61B;"
-                                                    points="321.993,172.332 321.993,237.432 296.753,250.002 300.913,222.122 281.163,202.002    308.963,197.332  " />
-                                                <polygon style="fill:#E0A300;"
-                                                    points="271.162,202.002 251.412,222.122 255.562,250.002 230.332,237.432 220.332,214.882    230.332,172.332 243.362,197.332  " />
-                                                <polygon style="fill:#FFC61B;"
-                                                    points="230.332,172.332 230.332,237.432 205.092,250.002 209.252,222.122 189.502,202.002    217.302,197.332  " />
-                                                <polygon style="fill:#E0A300;"
-                                                    points="179.503,202.002 159.753,222.122 163.903,250.002 138.673,237.432 128.673,214.882    138.673,172.332 151.703,197.332  " />
-                                                <polygon style="fill:#FFC61B;"
-                                                    points="138.673,172.332 138.673,237.432 113.433,250.002 117.593,222.122 97.843,202.002    125.643,197.332  " />
-                                            </g>
-                                        </svg>
-                                        <span class="text-gray-500 text-xs ml-1">300 reseñas</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <!-- /Featured Item -->
+                                    <div class="flex flex-wrap gap-1 mt-4">
+                                        @foreach ($book->genres as $genre)
+                                            <div>
+                                                <p tabindex="0"
+                                                    class="focus:outline-none text-xs text-gray-600 px-2 bg-gray-200 py-1">
+                                                    <span>
+                                                        {{ $genre->name }}
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        @endforeach
 
-                    <!-- Featured Item -->
-                    <a href="#"
-                        class="focus:outline-none xl:mb-0 mb-8 rounded-xl overflow-hidden shadow-xs bg-white">
-                        <div>
-                            <img alt="person capturing an image"
-                                src="https://m.media-amazon.com/images/I/7169VZEOYFL._AC_UF1000,1000_QL80_.jpg"
-                                tabindex="0" class="focus:outline-none w-full h-44 object-contain py-4" />
-                        </div>
-                        <div>
-                            <div class="p-4">
-                                <div>
-                                    <h2 tabindex="0" class="focus:outline-none text-lg font-semibold">
-                                        Design Patterns: Elements of Reusable Object-Oriented Software</h2>
-                                    <p class="text-sm text-gray-500">por Erich Gamma, Richard Helm, Ralph Johnson, John
-                                        Vlissides</p>
-                                </div>
-                                <div class="text-sm text-gray-600 py-2">
-                                    El libro describe patrones comunes de diseño que permiten resolver problemas
-                                    recurrentes
-                                    de manera elegante y flexible.
-                                </div>
-                                <div class="flex flex-wrap gap-1 mt-4">
-                                    <div>
-                                        <p tabindex="0"
-                                            class="focus:outline-none text-xs text-gray-600 px-2 bg-gray-200 py-1">
-                                            Programación</p>
                                     </div>
-                                    <div>
-                                        <p tabindex="0"
-                                            class="focus:outline-none text-xs text-gray-600 px-2 bg-gray-200 py-1">
-                                            Diseño de
-                                            software</p>
-                                    </div>
-                                    <div>
-                                        <p tabindex="0"
-                                            class="focus:outline-none text-xs text-gray-600 px-2 bg-gray-200 py-1">
-                                            Patrones
-                                            de diseño</p>
-                                    </div>
-                                </div>
-                                <div class="flex items-center mt-4 gap-2">
-                                    <div class="flex items-center">
-                                        <svg class="w-5 h-5 text-yellow-500" xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 20 20" fill="currentColor">
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                        </svg>
-                                        <span class="text-gray-500 text-xs">4 estrellas</span>
-                                    </div>
-                                    <div class="flex items-center">
-                                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" version="1.1"
-                                            id="Layer_1" viewBox="0 0 460 460" xml:space="preserve">
-                                            <g>
-                                                <path style="fill:#FF7F4F;"
-                                                    d="M230.333,0C103.308,0,0,102.974,0,230c0,98.785,62.479,183.024,150.004,215.598l297.381-291.024   C416.25,64.595,330.94,0,230.333,0z" />
-                                                <path style="fill:#FF5419;"
-                                                    d="M460,230c0-26.416-4.467-51.784-12.663-75.41l-44.274-44.274l-345.46,201.7l50.785,50.785   l-10.785,30.515l52.366,52.367C174.895,454.935,202.187,460,230.332,460C357.358,460,460,357.026,460,230z" />
-                                                <polygon style="fill:#71E2F0;"
-                                                    points="403.063,110.317 403.063,312.017 230.332,312.017 200.003,211.167 230.332,110.317  " />
-                                                <polygon style="fill:#C2FBFF;"
-                                                    points="230.332,110.317 230.332,312.017 178.893,312.017 97.603,393.317 97.603,312.017    57.603,312.017 57.603,110.317  " />
-                                                <polygon style="fill:#C2FBFF;"
-                                                    points="383.063,130.317 383.063,292.017 230.332,292.017 210.333,211.167 230.332,130.317  " />
-                                                <rect x="77.603" y="130.317" style="fill:#FFFFFF;"
-                                                    width="152.729" height="161.7" />
-                                                <polygon style="fill:#E0A300;"
-                                                    points="362.823,202.002 343.073,222.122 347.223,250.002 321.993,237.432 311.993,214.882    321.993,172.332 335.023,197.332  " />
-                                                <polygon style="fill:#FFC61B;"
-                                                    points="321.993,172.332 321.993,237.432 296.753,250.002 300.913,222.122 281.163,202.002    308.963,197.332  " />
-                                                <polygon style="fill:#E0A300;"
-                                                    points="271.162,202.002 251.412,222.122 255.562,250.002 230.332,237.432 220.332,214.882    230.332,172.332 243.362,197.332  " />
-                                                <polygon style="fill:#FFC61B;"
-                                                    points="230.332,172.332 230.332,237.432 205.092,250.002 209.252,222.122 189.502,202.002    217.302,197.332  " />
-                                                <polygon style="fill:#E0A300;"
-                                                    points="179.503,202.002 159.753,222.122 163.903,250.002 138.673,237.432 128.673,214.882    138.673,172.332 151.703,197.332  " />
-                                                <polygon style="fill:#FFC61B;"
-                                                    points="138.673,172.332 138.673,237.432 113.433,250.002 117.593,222.122 97.843,202.002    125.643,197.332  " />
-                                            </g>
-                                        </svg>
-                                        <span class="text-gray-500 text-xs ml-1">340 reseñas</span>
+                                    <div class="flex items-center mt-4 gap-2">
+                                        <div class="flex items-center">
+                                            <svg class="w-5 h-5 text-yellow-500" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 20 20" fill="currentColor">
+                                                <path
+                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                            </svg>
+                                            <span class="text-gray-500 text-xs">{{number_format($book->reviews_avg_stars,1)}} estrellas</span>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" version="1.1"
+                                                id="Layer_1" viewBox="0 0 460 460" xml:space="preserve">
+                                                <g>
+                                                    <path style="fill:#FF7F4F;"
+                                                        d="M230.333,0C103.308,0,0,102.974,0,230c0,98.785,62.479,183.024,150.004,215.598l297.381-291.024   C416.25,64.595,330.94,0,230.333,0z" />
+                                                    <path style="fill:#FF5419;"
+                                                        d="M460,230c0-26.416-4.467-51.784-12.663-75.41l-44.274-44.274l-345.46,201.7l50.785,50.785   l-10.785,30.515l52.366,52.367C174.895,454.935,202.187,460,230.332,460C357.358,460,460,357.026,460,230z" />
+                                                    <polygon style="fill:#71E2F0;"
+                                                        points="403.063,110.317 403.063,312.017 230.332,312.017 200.003,211.167 230.332,110.317  " />
+                                                    <polygon style="fill:#C2FBFF;"
+                                                        points="230.332,110.317 230.332,312.017 178.893,312.017 97.603,393.317 97.603,312.017    57.603,312.017 57.603,110.317  " />
+                                                    <polygon style="fill:#C2FBFF;"
+                                                        points="383.063,130.317 383.063,292.017 230.332,292.017 210.333,211.167 230.332,130.317  " />
+                                                    <rect x="77.603" y="130.317" style="fill:#FFFFFF;"
+                                                        width="152.729" height="161.7" />
+                                                    <polygon style="fill:#E0A300;"
+                                                        points="362.823,202.002 343.073,222.122 347.223,250.002 321.993,237.432 311.993,214.882    321.993,172.332 335.023,197.332  " />
+                                                    <polygon style="fill:#FFC61B;"
+                                                        points="321.993,172.332 321.993,237.432 296.753,250.002 300.913,222.122 281.163,202.002    308.963,197.332  " />
+                                                    <polygon style="fill:#E0A300;"
+                                                        points="271.162,202.002 251.412,222.122 255.562,250.002 230.332,237.432 220.332,214.882    230.332,172.332 243.362,197.332  " />
+                                                    <polygon style="fill:#FFC61B;"
+                                                        points="230.332,172.332 230.332,237.432 205.092,250.002 209.252,222.122 189.502,202.002    217.302,197.332  " />
+                                                    <polygon style="fill:#E0A300;"
+                                                        points="179.503,202.002 159.753,222.122 163.903,250.002 138.673,237.432 128.673,214.882    138.673,172.332 151.703,197.332  " />
+                                                    <polygon style="fill:#FFC61B;"
+                                                        points="138.673,172.332 138.673,237.432 113.433,250.002 117.593,222.122 97.843,202.002    125.643,197.332  " />
+                                                </g>
+                                            </svg>
+                                            <span class="text-gray-500 text-xs ml-1">{{$book->reviews_count}} reseñas</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
-                    <!-- /Featured Item -->
-
-                    <!-- Featured Item -->
-                    <a href="#"
-                        class="focus:outline-none xl:mb-0 mb-8 rounded-xl overflow-hidden shadow-xs bg-white">
-                        <div>
-                            <img alt="person capturing an image"
-                                src="https://images-na.ssl-images-amazon.com/images/I/51FrXXE3j7L._AC_UL210_SR210,210_.jpg"
-                                tabindex="0" class="focus:outline-none w-full h-44 object-contain py-4" />
-                        </div>
-                        <div>
-                            <div class="p-4">
-                                <div>
-                                    <h2 tabindex="0" class="focus:outline-none text-lg font-semibold">Introduction
-                                        to the
-                                        Theory of Computation</h2>
-                                    <p class="text-sm text-gray-500">por Michael Sipser</p>
-                                </div>
-                                <div class="text-sm text-gray-600 py-2">
-                                    Explora conceptos como autómatas, lenguajes formales, gramáticas y la solución de
-                                    problemas mediante algoritmos. Es una lectura esencial para comprender los aspectos
-                                    teóricos de la programación y la computación.
-                                </div>
-                                <div class="flex flex-wrap gap-1 mt-4">
-                                    <div>
-                                        <p tabindex="0"
-                                            class="focus:outline-none text-xs text-gray-600 px-2 bg-gray-200 py-1">
-                                            Programación</p>
-                                    </div>
-                                    <div>
-                                        <p tabindex="0"
-                                            class="focus:outline-none text-xs text-gray-600 px-2 bg-gray-200 py-1">
-                                            Teoría de
-                                            la computación</p>
-                                    </div>
-                                    <div>
-                                        <p tabindex="0"
-                                            class="focus:outline-none text-xs text-gray-600 px-2 bg-gray-200 py-1">
-                                            Algoritmos</p>
-                                    </div>
-                                </div>
-                                <div class="flex items-center mt-4 gap-2">
-                                    <div class="flex items-center">
-                                        <svg class="w-5 h-5 text-yellow-500" xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 20 20" fill="currentColor">
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                        </svg>
-                                        <span class="text-gray-500 text-xs">4,2 estrellas</span>
-                                    </div>
-                                    <div class="flex items-center">
-                                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" version="1.1"
-                                            id="Layer_1" viewBox="0 0 460 460" xml:space="preserve">
-                                            <g>
-                                                <path style="fill:#FF7F4F;"
-                                                    d="M230.333,0C103.308,0,0,102.974,0,230c0,98.785,62.479,183.024,150.004,215.598l297.381-291.024   C416.25,64.595,330.94,0,230.333,0z" />
-                                                <path style="fill:#FF5419;"
-                                                    d="M460,230c0-26.416-4.467-51.784-12.663-75.41l-44.274-44.274l-345.46,201.7l50.785,50.785   l-10.785,30.515l52.366,52.367C174.895,454.935,202.187,460,230.332,460C357.358,460,460,357.026,460,230z" />
-                                                <polygon style="fill:#71E2F0;"
-                                                    points="403.063,110.317 403.063,312.017 230.332,312.017 200.003,211.167 230.332,110.317  " />
-                                                <polygon style="fill:#C2FBFF;"
-                                                    points="230.332,110.317 230.332,312.017 178.893,312.017 97.603,393.317 97.603,312.017    57.603,312.017 57.603,110.317  " />
-                                                <polygon style="fill:#C2FBFF;"
-                                                    points="383.063,130.317 383.063,292.017 230.332,292.017 210.333,211.167 230.332,130.317  " />
-                                                <rect x="77.603" y="130.317" style="fill:#FFFFFF;"
-                                                    width="152.729" height="161.7" />
-                                                <polygon style="fill:#E0A300;"
-                                                    points="362.823,202.002 343.073,222.122 347.223,250.002 321.993,237.432 311.993,214.882    321.993,172.332 335.023,197.332  " />
-                                                <polygon style="fill:#FFC61B;"
-                                                    points="321.993,172.332 321.993,237.432 296.753,250.002 300.913,222.122 281.163,202.002    308.963,197.332  " />
-                                                <polygon style="fill:#E0A300;"
-                                                    points="271.162,202.002 251.412,222.122 255.562,250.002 230.332,237.432 220.332,214.882    230.332,172.332 243.362,197.332  " />
-                                                <polygon style="fill:#FFC61B;"
-                                                    points="230.332,172.332 230.332,237.432 205.092,250.002 209.252,222.122 189.502,202.002    217.302,197.332  " />
-                                                <polygon style="fill:#E0A300;"
-                                                    points="179.503,202.002 159.753,222.122 163.903,250.002 138.673,237.432 128.673,214.882    138.673,172.332 151.703,197.332  " />
-                                                <polygon style="fill:#FFC61B;"
-                                                    points="138.673,172.332 138.673,237.432 113.433,250.002 117.593,222.122 97.843,202.002    125.643,197.332  " />
-                                            </g>
-                                        </svg>
-                                        <span class="text-gray-500 text-xs ml-1">200 reseñas</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
+                        </a>
+                    @endforeach
                     <!-- /Featured Item -->
                 </div>
                 <!-- /Featured Grid -->
+                {{$books->links()}}
             </div>
 
             <!-- /Featured section -->
@@ -1324,7 +1081,8 @@
                                 d="M759.6 387c-0.5 0-1.1-0.1-1.6-0.2L514.3 337c-3.3-0.7-5.9-3.4-6.3-6.8s1.3-6.7 4.4-8.2l70.7-35.3c1.6-0.8 3.4-1 5.2-0.7L827 336c3.3 0.7 5.8 3.4 6.3 6.7 0.5 3.3-1.2 6.6-4.1 8.2l-65.8 35.2c-1.2 0.6-2.5 0.9-3.8 0.9z m-219.4-61l218.2 44.6 43.8-23.5-214.5-44.8-47.5 23.7z"
                                 fill="#154B8B" />
                         </svg>
-                        <span class="self-center text-xl font-semibold whitespace-nowrap text-white">{{ config('app.name') }}</span>
+                        <span
+                            class="self-center text-xl font-semibold whitespace-nowrap text-white">{{ config('app.name') }}</span>
                     </a>
                     <ul class="flex flex-wrap items-center mb-6 sm:mb-0">
                         <li>
